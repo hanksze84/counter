@@ -25,16 +25,16 @@ const App = () => {
       <div className="App">
         <h1>Home</h1>
         <h2>{home_counter}</h2>
-        <button data-number={1} onClick={home_handleAdd}>1 point</button>
-        <button data-number={2} onClick={home_handleAdd}>2 point</button>
-        <button data-number={3} onClick={home_handleAdd}>3 point</button>
+        <button onClick={() => home_handleAdd(1)}>1 point</button>
+        <button onClick={() => home_handleAdd(2)}>2 point</button>
+        <button onClick={() => home_handleAdd(3)}>3 point</button>
       </div>
       <div className="App">
         <h1>Away</h1>
         <h2>{away_counter}</h2>
-        <button data-number={1} onClick={away_handleAdd}>1 point</button>
-        <button data-number={2} onClick={away_handleAdd}>2 point</button>
-        <button data-number={3} onClick={away_handleAdd}>3 point</button>
+        <button onClick={() => away_handleAdd(1)}>1 point</button>
+        <button onClick={() => away_handleAdd(2)}>2 point</button>
+        <button onClick={() => away_handleAdd(3)}>3 point</button>
       </div>
     </div>
   );
